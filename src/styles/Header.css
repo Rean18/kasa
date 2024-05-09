@@ -1,0 +1,16 @@
+header {
+    max-width: 1240px;
+    border: solid red;
+}
+
+nav{
+    max-width: 309px;
+    margin-left: 800px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
