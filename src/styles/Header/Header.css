@@ -1,0 +1,47 @@
+header {
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid red;
+}
+header img {
+  max-width: 210.32px;
+  border: blue solid;
+}
+
+nav {
+  width: 30%;
+  border: green solid;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav ul li {
+  list-style-type: none;
+}
+nav ul li:hover {
+  text-decoration: underline;
+}
+nav ul li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  color: black;
+}
+
+@media screen and (max-width: 600px) {
+  header img {
+    max-width: 145px;
+  }
+  nav {
+    width: 100%;
+  }
+  nav li a {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=Header.css.map */

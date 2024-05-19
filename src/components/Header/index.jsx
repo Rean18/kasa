@@ -1,18 +1,16 @@
 import {Link} from 'react-router-dom'
-import '../../styles/Header.css'
+import '../../styles/Header/Header.css'
+import logo from '../../assets/logo.png'
 
 function Header() {
   return (
     <header>
-      <img src="" alt="" />
+        <img src={logo} alt="Logo de Kasa" />
       <nav>
         <ul>
           <li> <Link to="/">Accueil</Link></li>
-          <li><Link to="/about">A propos</Link></li>
-          <li><Link to="/property-details">Fiche du logement</Link></li>
-        </ul>
-        
-        
+          <li><Link to="/about">A Propos</Link></li>
+        </ul> 
       </nav>
     </header>
     

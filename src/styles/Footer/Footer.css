@@ -1,0 +1,18 @@
+footer {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+footer img {
+  width: 122px;
+  margin-top: 66px;
+  margin-bottom: 34px;
+}
+
+.mentions {
+  color: white;
+  font-size: 24px;
+  margin-bottom: 34px;
+}/*# sourceMappingURL=Footer.css.map */
