@@ -1,8 +1,19 @@
+import '../../styles/About/About.css'
+import Banner from '../../components/Banner/index'
+import photo from '../../assets/banner_about.png'
+
+
+
 function About() {
     return (
-        <div>
-            <h1>A propos</h1>
-        </div>
+        <main>
+            <Banner
+            photo = {photo}
+            showTitle={false} />
+            
+                
+            
+        </main>
     )
 }
 

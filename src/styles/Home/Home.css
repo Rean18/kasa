@@ -1,0 +1,9 @@
+main {
+  padding: 0 45px;
+}
+
+@media screen and (max-width: 905px) {
+  main {
+    padding: 0 20px;
+  }
+}/*# sourceMappingURL=Home.css.map */

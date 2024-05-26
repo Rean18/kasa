@@ -1,0 +1,29 @@
+.gallery {
+    margin: 20px 0;
+    padding: 50px ;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 50px;
+    border : blue 2px solid;
+    border-radius: 10px;
+    background-color: #F6F6F6;
+}
+
+
+@media screen and (max-width:1250px) {
+
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+
+.gallery{
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+
+}
+    
+}

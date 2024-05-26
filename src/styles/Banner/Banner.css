@@ -1,0 +1,35 @@
+.banner {
+  margin-top: 50px;
+  height: 223px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: solid 1px;
+  border-radius: 25px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-size: cover;
+  background-position: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+}
+.bannerh1 {
+  margin: auto;
+}
+.banner br {
+  display: none;
+}
+
+@media screen and (max-width: 905px) {
+  .banner {
+    margin-top: 20px;
+    height: 111px;
+    border-radius: 10px;
+    background-size: 200%;
+    text-align: left;
+    font-size: 24px;
+  }
+  .banner br {
+    display: block;
+  }
+}/*# sourceMappingURL=Banner.css.map */

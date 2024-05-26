@@ -9,7 +9,7 @@ function Footer() {
                 <img src={logoFooter} alt='Logo Kasa en couleur blanche' />
             </div>
             <div className="mentions">
-                <p>© 2020 Kasa.All rights reserved</p>
+                <p>© 2020 Kasa.All <br/> rights reserved</p>
             </div>
         </footer>
     )

@@ -4,24 +4,22 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: solid red;
         img{
             max-width : 210.32px; ;
-            border:blue solid;
         }
 }
 
 nav{
     width: 30%;
-    border: green solid;
         ul {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
+            justify-content: space-between;
             align-items: center;
 
             li {
                 list-style-type: none;
+                font-size: 24px;
                 
                 &:hover {
                     text-decoration: underline;
@@ -30,7 +28,6 @@ nav{
             li a {
                 text-decoration: none;
                 font-weight: 500;
-                font-size: 24px;
                 color : black;
             }
            
@@ -39,7 +36,7 @@ nav{
     }
 
 
-@media screen  and (max-width: 600px){
+@media screen and (max-width: 800px){
     
     header {
         img {
@@ -50,9 +47,15 @@ nav{
     nav{
         width:100%;
 
-        li a {
+        ul {
+            justify-content: space-around;
+            
+            li {
             font-size: 12px;
+            text-transform: uppercase;
+             }
         }
+    
     }
 
  }
