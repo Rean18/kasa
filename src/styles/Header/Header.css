@@ -11,6 +11,7 @@ header img {
 
 nav {
   width: 30%;
+  max-width: 350px;
 }
 nav ul {
   display: flex;

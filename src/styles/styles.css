@@ -26,6 +26,14 @@ header, main {
   background-color: white;
 }
 
+/* Ecran large */
+@media screen and (min-width: 1600px) {
+  body {
+    max-width: 1600px;
+    margin: auto;
+  }
+}
+/* Mobile */
 @media screen and (max-width: 800px) {
   header, main {
     padding: 0px 20px;
