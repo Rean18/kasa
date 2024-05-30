@@ -11,14 +11,8 @@ function Gallery() {
                 key = {logement.id}
                 title = {logement.title}
                 cover = {logement.cover}
-                
-
                 />
-
             )
-
-            
-
             )}
            
                 

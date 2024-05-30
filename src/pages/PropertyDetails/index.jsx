@@ -1,7 +1,17 @@
+import properties from '../../Datas/datas.json'
+import SlideShow from '../../components/SlideShow'
+
+
 function PropertyDetails() {
+
+
+    
     return (
-        <div>
-            <h1>Fiche du logement</h1>
+        <div className='property-container'>
+            <SlideShow />
+            
+           
+
         </div>
     )
 }
