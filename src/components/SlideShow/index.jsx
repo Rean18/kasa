@@ -8,7 +8,6 @@ function SlideShow() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const currentImage = properties[currentIndex].pictures
     const nextImage = () => {setCurrentIndex(currentIndex + 1)}
     const prevImage = () => {setCurrentIndex(currentIndex - 1)}
 
@@ -16,7 +15,7 @@ function SlideShow() {
     return (
         <div>
             <div className='cover-container'>
-                <img src= {currentImage} alt="Carrousel" />
+                <img src= { properties[0].pictures[currentIndex]} alt="Carrousel" />
                 <div className='button-container'>
                     <button onClick={prevImage}> Précédent </button>
                     <button onClick={nextImage}>  Next </button>
