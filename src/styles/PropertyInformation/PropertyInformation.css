@@ -1,0 +1,160 @@
+.information-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.information-container .first-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information-container .first-line h1 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #FF6060;
+}
+.information-container .first-line p {
+  margin-top: 10px;
+  font-size: 18px;
+}
+.information-container .first-line .property-tags-mobile {
+  display: none;
+}
+.information-container .first-line .location-owner {
+  display: flex;
+  align-items: center;
+}
+.information-container .first-line .location-owner h2 {
+  max-width: 90px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #FF6060;
+  font-weight: 500;
+}
+.information-container .first-line .location-owner img {
+  width: 64px;
+  border-radius: 100%;
+}
+.information-container .second-line {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.information-container .second-line .property-tags {
+  display: flex;
+  align-items: center;
+}
+.information-container .second-line .location-owner-mobile {
+  display: none;
+  align-items: center;
+}
+.information-container .second-line .location-owner-mobile h2 {
+  max-width: 90px;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #FF6060;
+  font-weight: 500;
+}
+.information-container .second-line .location-owner-mobile img {
+  width: 64px;
+  border-radius: 100%;
+}
+.information-container .third-line {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.information-container .third-line .property-description {
+  width: 50%;
+}
+.information-container .third-line .property-equipment {
+  width: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .information-container {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .information-container .first-line {
+    margin: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .information-container .first-line h1 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #FF6060;
+  }
+  .information-container .first-line p {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .information-container .first-line .property-tags-mobile {
+    margin-top: 10px;
+    display: flex;
+  }
+  .information-container .first-line .property-tags-mobile .tags-container {
+    margin: 0;
+    -moz-column-gap: 10px;
+         column-gap: 10px;
+    align-items: flex-start;
+  }
+  .information-container .first-line .property-tags-mobile p {
+    height: 12px;
+    font-size: 10px;
+    border-radius: 5px;
+  }
+  .information-container .first-line .location-owner {
+    display: none;
+  }
+  .information-container .second-line {
+    margin: 20px;
+  }
+  .information-container .second-line .property-tags {
+    display: none;
+  }
+  .information-container .second-line .property-rating {
+    width: 100px;
+  }
+  .information-container .second-line .property-rating img {
+    width: 18px;
+  }
+  .information-container .second-line .location-owner-mobile {
+    display: flex;
+    align-items: center;
+  }
+  .information-container .second-line .location-owner-mobile h2 {
+    max-width: 70px;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  .information-container .second-line .location-owner-mobile img {
+    width: 40px;
+  }
+  .information-container .third-line {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .information-container .third-line .property-description {
+    width: 100%;
+  }
+  .information-container .third-line .property-equipment {
+    width: 100%;
+  }
+  .information-container .third-line .title {
+    padding: 5px;
+    max-height: 32px;
+  }
+  .information-container .third-line h2 {
+    font-size: 16px;
+  }
+  .information-container .third-line p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=PropertyInformation.css.map */

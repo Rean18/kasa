@@ -1,25 +1,42 @@
 import { useState } from 'react'
-import properties from '../../Datas/datas.json'
+import '../../styles/SlideShow/SlideShow.css'
+import iconPrev from '../../assets/icon_slider_prev.png'
+import iconNext from '../../assets/icon_slider_next.png'
 
 
 
 
-function SlideShow() {
+function SlideShow({pictures}) {
+
+
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextImage = () => {setCurrentIndex(currentIndex + 1)}
-    const prevImage = () => {setCurrentIndex(currentIndex - 1)}
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length)}
+
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length)};
 
 
     return (
         <div>
-            <div className='cover-container'>
-                <img src= { properties[0].pictures[currentIndex]} alt="Carrousel" />
+            <div 
+            className='cover-container'
+            style={{backgroundImage: `url(${pictures[currentIndex]})`}}
+            >
                 <div className='button-container'>
-                    <button onClick={prevImage}> Précédent </button>
-                    <button onClick={nextImage}>  Next </button>
+                    <button onClick={prevImage}> 
+                        <img src={iconPrev} alt='icone précédent' />
+                    </button>
+                    <button onClick={nextImage}>
+                    <img src={iconNext} alt='icone suivant' />
+                    </button>
                 </div>
+                <div className='index-indication'>
+                    <p>{currentIndex + 1}/{pictures.length}</p>
+                </div>
+                
             </div>
             
         </div>

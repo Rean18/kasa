@@ -1,0 +1,26 @@
+.tags-container {
+    width: auto;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    column-gap: 20px;
+    align-items: center;
+
+        p {
+            width : auto;
+            padding: 5px 20px;
+            height : 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: #FF6060;
+            color : white;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 20px;
+
+        }
+
+}
+

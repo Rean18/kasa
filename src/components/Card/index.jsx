@@ -3,12 +3,12 @@ import '../../styles/Card/Card.css'
 
 
 
-    const Card = ({title, cover}) => {
+    const Card = ({title, cover, onClick}) => {
 
     return (
 
         <div className='card'>
-            <div className="image_container">
+            <div className="image_container" onClick={onClick}>
                 <img alt={title} src={cover} />
                 <h2>{title}</h2>
             </div>
