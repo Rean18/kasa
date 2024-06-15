@@ -4,7 +4,7 @@ import Rating from '../Rating'
 import Tags from '../Tags'
 
 
-function PropertyInformation({title, location, hostName, hostPicture, tags, rating, description, element, equipmentDescription }) {
+function PropertyInformation({title, location, hostName, hostPicture, tags, rating, description, equipmentDescription }) {
 
   
 
@@ -44,19 +44,21 @@ function PropertyInformation({title, location, hostName, hostPicture, tags, rati
             <div className="third-line">
                 <div className="property-description">
                 <Collapse 
-                    title= 'Description'
-                    description={description}/>
+                    collapseTitle= 'Description'
+                    collapseText={description}/>
                 </div>
                 <div className="property-equipment">
                     <Collapse
                     className = 'collapse'
-                    title='Equipements'
-                    description={
-                        equipmentDescription.map((element) => (
+                    collapseTitle='Equipements'
+                    collapseText={
                         <ul>
-                            <li>{element}</li>  
+                        {equipmentDescription.map((element, index) => (
+                        
+                            <li key={index}>{element}</li>  
+                        
+                        ))}
                         </ul>
-                        ))
                         }
                     />
                    

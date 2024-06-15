@@ -13,23 +13,23 @@ function About() {
             showTitle={false} />
 
             <Collapse 
-                title='Fabilité' 
-                description='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées
+                collapseTitle='Fabilité' 
+                collapseText='Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements et toutes les informations sont régulièrement vérifiées
                 par nos équipes.'
             />
             <Collapse 
-                title = 'Respect' 
-                description ='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainement une exclusion de
+                collapseTitle = 'Respect' 
+                collapseText ='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainement une exclusion de
                 la plateforme.' 
             />
             <Collapse 
-                title = 'Service' 
-                description='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainement une exclusion de
+                collapseTitle = 'Service' 
+                collapseText='La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entrainement une exclusion de
                 la plateforme.'
             />
             <Collapse 
-                title = 'Sécruité' 
-                description="La sécurité est la priorité de Kasa. Aussi bien pous nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. 
+                collapseTitle = 'Sécruité' 
+                collapseText="La sécurité est la priorité de Kasa. Aussi bien pous nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. 
                 En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité
                 domestiques pour nos hôtes."
             />

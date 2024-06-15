@@ -8,10 +8,7 @@ function PropertyDetails() {
     const { id } = useParams();
     const navigate = useNavigate();
 
-    console.log('ID from URL:', id); // Log pour vérifier l'ID
-
     const property = properties.find(prop => prop.id === id);
-    console.log('Found Property:', property); // Log pour vérifier si la propriété est trouvée
 
     useEffect(() => {
         if (!property) {

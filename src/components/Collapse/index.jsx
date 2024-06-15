@@ -3,7 +3,7 @@ import '../../styles/Collapse/Collapse.css'
 import icon from '../../assets/icon_button.png'
 
 
-function Collapse({title, description}) {
+function Collapse({collapseTitle, collapseText}) {
 
     const [isVisible, setIsVisible] = useState(false);
     const descriptionRef = useRef(null);
@@ -12,10 +12,10 @@ function Collapse({title, description}) {
         setIsVisible(!isVisible);
     }
     return (
-        <div class="container">
-      <div class="item">
-        <div class="title">
-            <h2>{title}</h2>
+        <div className="container">
+      <div className="item">
+        <div className="title">
+            <h2>{collapseTitle}</h2>
             <button id="button" onClick={activeVisibility}>
                 <img 
                     src={icon} 
@@ -28,7 +28,7 @@ function Collapse({title, description}) {
             ref={descriptionRef}
          >
             <div className='description-content'>
-                <p>{description}</p>
+                <span>{collapseText}</span>
             </div>
          </div>
       </div>

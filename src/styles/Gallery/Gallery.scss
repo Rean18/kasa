@@ -1,9 +1,9 @@
 .gallery {
     margin: 20px 0;
-    padding: 50px ;
     display: grid;
+    padding: 50px 0px;
     grid-template-columns: repeat(3,1fr);
-    gap : 50px;
+    gap : 40px;
     border-radius: 10px;
     background-color: #F6F6F6;
 }
@@ -22,6 +22,7 @@
 .gallery{
     grid-template-columns: repeat(1, 1fr);
     padding: 0;
+    background-color: white;
 
 }
     
