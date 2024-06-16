@@ -22,7 +22,6 @@
   color: white;
   background-color: #FF6060;
   border: none;
-  transition: transform 700ms ease;
 }
 .title button img {
   transition: 500ms ease;

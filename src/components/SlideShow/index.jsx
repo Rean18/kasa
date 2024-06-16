@@ -13,10 +13,10 @@ function SlideShow({pictures}) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const nextImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex + 1) % pictures.length)}
+        setCurrentIndex((index) => (index + 1) % pictures.length)}
 
     const prevImage = () => {
-        setCurrentIndex((prevIndex) => (prevIndex - 1 + pictures.length) % pictures.length)};
+        setCurrentIndex((index) => (index - 1 + pictures.length) % pictures.length)};
 
 
     return (
