@@ -1,4 +1,4 @@
-import React, {useState, useRef} from 'react';
+import React, {useState} from 'react';
 import '../../styles/Collapse/Collapse.css'
 import icon from '../../assets/icon_button.png'
 
@@ -6,7 +6,6 @@ import icon from '../../assets/icon_button.png'
 function Collapse({collapseTitle, collapseText}) {
 
     const [isVisible, setIsVisible] = useState(false);
-    const descriptionRef = useRef(null);
 
     const activeVisibility = () => {
         setIsVisible(!isVisible);
@@ -25,7 +24,6 @@ function Collapse({collapseTitle, collapseText}) {
          </div>
          <div 
             className= {`description ${isVisible ? 'visible' : ''}`}
-            ref={descriptionRef}
          >
             <div className='description-content'>
                 <span>{collapseText}</span>
