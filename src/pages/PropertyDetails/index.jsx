@@ -12,14 +12,12 @@ function PropertyDetails() {
 
     useEffect(() => {
         if (!property) {
-            console.log("Logement non trouvé, redirection vers la page d'erreur");
-            navigate('/error'); // Navigue vers la page d'erreur
+            navigate('/error'); 
         }
     }, [property, navigate]);
 
     if (!property) {
-        console.log("Propriété non trouvée, retour null pour le rendu"); // Log pour vérifier le retour null
-        return null; // Ou un message de chargement/spinner
+        return null; 
     }
 
     return (

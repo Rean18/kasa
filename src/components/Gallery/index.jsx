@@ -8,15 +8,11 @@ import { useNavigate } from 'react-router-dom'
 
 function Gallery() {
 
-
-    
     const navigate = useNavigate();
     const handleClick = (id) => {
        
-            navigate(`/property-details/${id}`)
-           
+            navigate(`/property-details/${id}`)     
     };
-
     return (
         <div className='gallery'>
             {logements.map((logement) => (
@@ -28,9 +24,6 @@ function Gallery() {
                 />
             )
             )}
-           
-                
-        
         </div>
         
     )
