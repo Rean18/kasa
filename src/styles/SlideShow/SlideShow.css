@@ -25,6 +25,9 @@
 .cover-container .button-container button img {
   width: 45px;
 }
+.cover-container .button-container button img.hide {
+  visibility: hidden;
+}
 .cover-container .index-indication {
   width: 30px;
   text-align: center;

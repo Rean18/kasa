@@ -10,7 +10,9 @@ import '../../styles/Card/Card.css'
         <div className='card'>
             <div className="image_container" onClick={onClick}>
                 <img alt={title} src={cover} />
-                <h2>{title}</h2>
+            </div>
+            <div className='title-container'>
+            <h2>{title}</h2>
             </div>
         </div>
     )

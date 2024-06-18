@@ -27,8 +27,12 @@
                     img {
                         width: 45px;
                     }
+                    img.hide {
+                        visibility: hidden;
+                    }
                 }
         }
+
 
         .index-indication {
             width: 30px;

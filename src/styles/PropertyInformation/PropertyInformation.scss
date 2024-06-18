@@ -1,5 +1,5 @@
 .information-container {
-    padding: 30px;
+    padding: 30px 20px;
     display: flex;
     flex-direction: column;
 
@@ -79,6 +79,7 @@
             margin-top: 30px;
             display: flex;
             justify-content: space-between;
+            column-gap: 40px;
                 .property-description {
                     width: 50%;
                 }

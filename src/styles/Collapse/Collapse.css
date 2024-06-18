@@ -2,7 +2,9 @@
   border-radius: 5px;
   max-width: 1000px;
   margin: auto;
-  padding: 20px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  padding: 20px 0;
 }
 
 .title {
@@ -22,6 +24,7 @@
   color: white;
   background-color: #FF6060;
   border: none;
+  cursor: pointer;
 }
 .title button img {
   transition: 500ms ease;
@@ -51,6 +54,9 @@
 }
 
 @media screen and (max-width: 800px) {
+  .item {
+    padding: 20px;
+  }
   .container {
     width: 100%;
   }

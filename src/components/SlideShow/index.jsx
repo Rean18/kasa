@@ -25,12 +25,12 @@ function SlideShow({pictures}) {
             className='cover-container'
             style={{backgroundImage: `url(${pictures[currentIndex]})`}}
             >
-                <div className='button-container'>
+                <div className=' button-container'>
                     <button onClick={prevImage}> 
-                        <img src={iconPrev} alt='icone précédent' />
+                        <img src={iconPrev} className={`change-icon ${pictures.length === 1 ? 'hide': ''}`} alt='icone précédent' />
                     </button>
                     <button onClick={nextImage}>
-                    <img src={iconNext} alt='icone suivant' />
+                    <img src={iconNext} className={`change-icon ${pictures.length === 1 ? 'hide': ''}`} alt='icone suivant' />
                     </button>
                 </div>
                 <div className='index-indication'>
