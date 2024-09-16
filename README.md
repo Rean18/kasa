@@ -1,3 +1,6 @@
+
+![Présentation kasa responsive](https://github.com/user-attachments/assets/fbd1e444-68ba-493f-9342-0fe023b78688)
+
 # Kasa - Application de location immobilière
 
 ## Description
